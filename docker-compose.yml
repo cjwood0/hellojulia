@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+
+  # Define the docker server
+  server:
+    # Define the path to the Dockerfile to use to create the image
+    # Here 'helloserver/' corresponds to the path to the server folder
+    # that contains the Dockerfile to use.
+    build: helloserver/
+
+    # The command to execute once the image is created.
+    command: julia ./helloworld.jl
+
+    #ports:
+     # - 8080:8080 # by default
+
+    # Here we define that the container can access to the 'localhost' of the computer.
+    network_mode: host
