@@ -4,7 +4,7 @@ This application demonstrates using julia containerized with docker.
 
 1. Clone the repository
 
-2. Run `docke-compose up`
+2. Run `docker-compose up`
 
 3. Open your web browser to http://127.0.0.1:8081
 
